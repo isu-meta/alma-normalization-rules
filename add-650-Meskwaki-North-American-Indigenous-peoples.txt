@@ -1,0 +1,7 @@
+rule "Add 650 with 'Meskwaki (North American Indigenous peoples)' for LCSH 'Fox Indians'"
+when 
+(exists "650.{*,*}.a.Fox Indians")
+then
+addField "650.{-,7}.a.Meskwaki (North American Indigenous peoples)"
+addSubField "650.2.local" if ( exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)" )
+end
