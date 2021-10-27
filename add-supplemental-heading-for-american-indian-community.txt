@@ -1,0 +1,17 @@
+rule "add 650_7 $$a Ioway (North American Indigenous peoples) $$2 local"
+when
+(exists "650.{*,*}.a.Iowa Indians*") AND
+(not exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
+then
+addField "650.{-,7}.a.Ioway (North American Indigenous peoples)"
+addSubField "650.2.local" if (exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Meskwaki (North American Indigenous peoples) $$2 local"
+when
+(exists "650.{*,*}.a.Fox Indians*|Sauk Indians*|Fox women*")
+AND (not exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
+then
+addField "650.{-,7}.a.Meskwaki (North American Indigenous peoples)"
+addSubField "650.2.local" if (exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
+end
