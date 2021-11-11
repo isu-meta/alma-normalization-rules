@@ -1,17 +1,98 @@
+rule "add 650_7 $$a Anishinaabe (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Ottawa Indians*|Ojibwa Indians*|Potawatomi Indians*|Potawatomi children*")
+ AND (not exists "650.{-,7}.a.Anishinaabe (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Anishinaabe (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Anishinaabe (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Bodwéwadmik (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Potawatomi Indians*|Potawatomi children*")
+ AND (not exists "650.{-,7}.a.Bodwéwadmik (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Bodwéwadmik (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Bodwéwadmik (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Ho-Chunk (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Ho-Chunk Indians*|Ho-Chunk women*|Winnebago boys*|Winnebago women*|   Winnebago Indians*|Winnebago artists*")
+ AND (not exists "650.{-,7}.a.Ho-Chunk (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Ho-Chunk (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Ho-Chunk (North American Indigenous peoples)")
+end
+
 rule "add 650_7 $$a Ioway (North American Indigenous peoples) $$2 local"
 when
-(exists "650.{*,*}.a.Iowa Indians*") AND
-(not exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
+ (exists "650.{*,*}.a.Iowa Indians*") AND
+ (not exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
 then
-addField "650.{-,7}.a.Ioway (North American Indigenous peoples)"
-addSubField "650.2.local" if (exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
+ addField "650.{-,7}.a.Ioway (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Jiwere-Nut'achi (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Oto Indians*|Missouri Indians*")
+ AND (not exists "650.{-,7}.a.Jiwere-Nut'achi (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Jiwere-Nut'achi (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Jiwere-Nut'achi (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Menominee (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Menominee Indians*|Menominee children*")
+ AND (not exists "650.{-,7}.a.Menominee (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Menominee (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Menominee (North American Indigenous peoples)")
 end
 
 rule "add 650_7 $$a Meskwaki (North American Indigenous peoples) $$2 local"
 when
-(exists "650.{*,*}.a.Fox Indians*|Sauk Indians*|Fox women*")
-AND (not exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
+ (exists "650.{*,*}.a.Fox Indians*|Sauk Indians*|Fox women*")
+ AND (not exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
 then
-addField "650.{-,7}.a.Meskwaki (North American Indigenous peoples)"
-addSubField "650.2.local" if (exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
+ addField "650.{-,7}.a.Meskwaki (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Myaamia (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Miami Indians*")
+ AND (not exists "650.{-,7}.a.Myaamia (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Myaamia (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Myaamia (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Omaha (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Omaha Indians*|Omaha children*|Omaha women*")
+ AND (not exists "650.{-,7}.a.Omaha (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Omaha (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Omaha (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Otoe-Missouria (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Oto Indians*|Missouri Indians*")
+ AND (not exists "650.{-,7}.a.Otoe-Missouria (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Otoe-Missouria (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Otoe-Missouria (North American Indigenous peoples)")
+end
+
+rule "add 650_7 $$a Odawa (North American Indigenous peoples) $$2 local"
+when
+ (exists "650.{*,*}.a.Ottawa Indians*")
+ AND (not exists "650.{-,7}.a.Odawa (North American Indigenous peoples)")
+then
+ addField "650.{-,7}.a.Odawa (North American Indigenous peoples)"
+ addSubField "650.2.local" if (exists "650.{-,7}.a.Odawa (North American Indigenous peoples)")
 end
