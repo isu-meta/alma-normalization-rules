@@ -1,6 +1,6 @@
 rule "add 650_7 $$a Anishinaabe (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Ottawa Indians*|Ojibwa Indians*|Potawatomi Indians*|Potawatomi children*")
+ (exists "650.{*,*}.a.Ottawa Indians*|Ojibwa Indians*|Potawatomi Indians*|Potawatomi children*|Hymns, Ojibwa*|Ojibwa art*|Ojibwa beadwork*|Ojibwa language*|Ojibwa literature*|Ojibwa mythology*|Ojibwa philosophy*|Potawatomi language*")
  AND (not exists "650.{-,7}.a.Anishinaabe (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Anishinaabe (North American Indigenous peoples)"
@@ -18,7 +18,7 @@ end
 
 rule "add 650_7 $$a Ho-Chunk (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Ho-Chunk Indians*|Ho-Chunk women*|Winnebago boys*|Winnebago women*|   Winnebago Indians*|Winnebago artists*")
+ (exists "650.{*,*}.a.Ho-Chunk Indians*|Ho-Chunk women*|Winnebago boys*|Winnebago women*|Winnebago Indians*|Winnebago artists*|Ho-Chunk language*|Winnebago mythology*")
  AND (not exists "650.{-,7}.a.Ho-Chunk (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Ho-Chunk (North American Indigenous peoples)"
@@ -27,7 +27,7 @@ end
 
 rule "add 650_7 $$a Ioway (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Iowa Indians*") AND
+ (exists "650.{*,*}.a.Iowa Indians*|Iowa language*") AND
  (not exists "650.{-,7}.a.Ioway (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Ioway (North American Indigenous peoples)"
@@ -36,7 +36,7 @@ end
 
 rule "add 650_7 $$a Jiwere-Nut'achi (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Oto Indians*|Missouri Indians*")
+ (exists "650.{*,*}.a.Oto Indians*|Missouri Indians*|Oto language*")
  AND (not exists "650.{-,7}.a.Jiwere-Nut'achi (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Jiwere-Nut'achi (North American Indigenous peoples)"
@@ -45,7 +45,7 @@ end
 
 rule "add 650_7 $$a Menominee (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Menominee Indians*|Menominee children*")
+ (exists "650.{*,*}.a.Menominee Indians*|Menominee children*|Menominee dance*|Menominee language*")
  AND (not exists "650.{-,7}.a.Menominee (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Menominee (North American Indigenous peoples)"
@@ -54,7 +54,7 @@ end
 
 rule "add 650_7 $$a Meskwaki (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Fox Indians*|Sauk Indians*|Fox women*")
+ (exists "650.{*,*}.a.Fox Indians*|Sauk Indians*|Fox women*|Fox art*|Fox dance*")
  AND (not exists "650.{-,7}.a.Meskwaki (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Meskwaki (North American Indigenous peoples)"
@@ -63,7 +63,7 @@ end
 
 rule "add 650_7 $$a Myaamia (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Miami Indians*")
+ (exists "650.{*,*}.a.Miami Indians*|Miami language (Ind. and Okla.)*")
  AND (not exists "650.{-,7}.a.Myaamia (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Myaamia (North American Indigenous peoples)"
@@ -72,7 +72,7 @@ end
 
 rule "add 650_7 $$a Omaha (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Omaha Indians*|Omaha children*|Omaha women*")
+ (exists "650.{*,*}.a.Omaha Indians*|Omaha children*|Omaha women*|Omaha dance*|Omaha dialect*|Omaha weapons*")
  AND (not exists "650.{-,7}.a.Omaha (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Omaha (North American Indigenous peoples)"
@@ -81,7 +81,7 @@ end
 
 rule "add 650_7 $$a Otoe-Missouria (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Oto Indians*|Missouri Indians*")
+ (exists "650.{*,*}.a.Oto Indians*|Missouri Indians*|Oto language*")
  AND (not exists "650.{-,7}.a.Otoe-Missouria (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Otoe-Missouria (North American Indigenous peoples)"
@@ -90,7 +90,7 @@ end
 
 rule "add 650_7 $$a Odawa (North American Indigenous peoples) $$2 local"
 when
- (exists "650.{*,*}.a.Ottawa Indians*")
+ (exists "650.{*,*}.a.Ottawa Indians*|Ottawa dialect*|Ottawa Indians*|Ottawa language*")
  AND (not exists "650.{-,7}.a.Odawa (North American Indigenous peoples)")
 then
  addField "650.{-,7}.a.Odawa (North American Indigenous peoples)"
